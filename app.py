@@ -53,9 +53,9 @@ if st.button("Predict Result",type="primary"):
 
         st.subheader("Prediction")
         r1,r2,r3=st.columns(3)
-        r1.metric(f"{home_team}Win",f"{home_win_pct:.1f}%")
+        r1.metric(f"{home_team} Win",f"{home_win_pct:.1f}%")
         r2.metric("Draw",f"{draw_pct:.1f}%")
-        r3.metric(f"{away_team}Win",f"{away_win_pct}%")
+        r3.metric(f"{away_team} Win",f"{away_win_pct}%")
 
         st.markdown(f"**{home_team}** win")
         st.progress(home_win_pct/100)
