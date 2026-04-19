@@ -1,4 +1,6 @@
 results.csv
+model.pkl
+team_form.pkl
 __pycache__/
 *.pyc
 .streamlit/
