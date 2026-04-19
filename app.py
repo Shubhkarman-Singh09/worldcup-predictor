@@ -1,6 +1,14 @@
 import streamlit as st
 import pickle
 import numpy as np
+import os
+
+if not os.path.exists("results.csv"):
+    import urllib.request
+    url = "https://raw.githubusercontent.com/martj42/international_results/master/results.csv"
+    print("Downloading results.csv...")
+    urllib.request.urlretrieve(url, "results.csv")
+    print("Done.")
 
 with open("model.pkl","rb")as f:
     model=pickle.load(f)
